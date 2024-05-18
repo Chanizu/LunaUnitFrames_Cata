@@ -41,10 +41,10 @@ local oUF = ns.oUF
 local playerClass = select(2, UnitClass("player"))
 local canCure = {}
 local cures = {
-	["DRUID"] = {[2782] = {"Curse"}, [2893] = {"Poison"}, [8946] = {"Poison"}},
-	["PRIEST"] = {[528] = {"Disease"}, [552] = {"Disease"}, [527] = {"Magic"}, [988] = {"Magic"}},
-	["PALADIN"] = {[4987] = {"Poison", "Disease", "Magic"}, [1152] = {"Poison", "Disease"}},
-	["SHAMAN"] = {[2870] = {"Disease"}, [526] = {"Poison"}},
+	["DRUID"] = {[2782] = {"Curse"}, {"Poison"},[88423] = {"Magic"}},
+	["PRIEST"] = {[528] = {"Disease"}, [527] = {"Magic"}},
+	["PALADIN"] = {[4987] = {"Poison", "Disease"}, [53551] = {"Magic"}},
+	["SHAMAN"] = {[51886] = {"Curse"}, [77130] = {"Magic"}},
 	["MAGE"] = {[475] = {"Curse"}},
 }
 cures = cures[playerClass]
